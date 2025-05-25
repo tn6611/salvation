@@ -12,15 +12,18 @@
       margin: 0;
       padding: 0;
     }
+
     .container {
       max-width: 600px;
       margin: auto;
       padding: 2rem;
       text-align: center;
     }
+
     h1 {
       color: #e6a700;
     }
+
     .prayer {
       background: #fffbe6;
       border: 1px solid #ffe680;
@@ -28,6 +31,7 @@
       margin: 1rem 0;
       border-radius: 10px;
     }
+
     .btn {
       display: inline-block;
       padding: 0.75rem 1.5rem;
@@ -38,23 +42,35 @@
       border-radius: 8px;
       font-weight: bold;
     }
+
     .footer {
       font-size: 0.9rem;
       color: #777;
       margin-top: 2rem;
     }
-    .audio-player {
-      margin: 1.5rem 0;
+
+    .form-wrapper {
+      margin-top: 2rem;
     }
-    iframe {
+
+    .form-container {
+      position: relative;
       width: 100%;
-      height: 600px;
+      padding-top: 135%; /* Adjust ratio based on form height */
+    }
+
+    .form-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       border: none;
     }
 
-    @media (max-width: 768px) {
-      iframe {
-        height: 800px;
+    @media (min-width: 768px) {
+      .form-container {
+        padding-top: 90%;
       }
     }
   </style>
@@ -66,26 +82,24 @@
 
     <div class="prayer">
       <p><strong>Prayer of Salvation:</strong></p>
-      <p>Lord Jesus, I believe You are the Son of God. I believe You died for me and rose again. I confess You as my Lord and Saviour. Come into my heart and make me new. Thank You for saving me. I am now born again. Amen.</p>
+      <p>Dear Lord Jesus, I believe You are the Son of God. I believe You died for me and rose again. I confess You as my Lord and Saviour from today. Come into my heart and make me new. Thank You for saving my soul. I am now born again I"m a child of God. Amen.</p>
     </div>
 
-    <!-- Embedded Audio Player -->
-    <div class="audio-player">
-      <p><strong>🎧 Listen to the Prayer:</strong></p>
-      <audio controls>
-        <source src="https://tn6611.github.io/salvation/Salvation_Prayer.opus" type="audio/ogg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
-
-    <!-- Action Buttons -->
-    <a href="https://tn6611.github.io/salvation/Salvation_Prayer.opus" class="btn" target="_blank">🎧 Follow Audio Prayer</a>
-    <a href="https://tn6611.github.io/salvation/Now_that_you_are_born_again_English.pdf" class="btn" target="_blank">📘 Welcome Gift</a>
-    <a href="https://wa.me/yourphonenumber" class="btn" target="_blank">💬 Contact Us on WhatsApp</a>
     <a href="https://your-wordworx-platform-link" class="btn" target="_blank">📖 Back to Word WorX</a>
+    <a href="https://tn6611.github.io/salvation/Now_that_you_are_born_again_English.pdf" class="btn" target="_blank">🎁 Welcome Gift (PDF)</a>
 
-    <!-- Google Form Embed -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7Ae8Int5y92SrqtrcTrTZWYmeRb22XhQti0irzBOIp0-O8Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div class="form-wrapper">
+      <h2>💌 We'd Love to Hear From You</h2>
+      <p>Please complete the form below so we can stay in touch:</p>
+      <div class="form-container">
+        <iframe 
+          src="https://docs.google.com/forms/d/e/1FAIpQLSf7Ae8Int5y92SrqtrcTrTZWYmeRb22XhQti0irzBOIp0-O8Q/viewform?embedded=true" 
+          loading="lazy" 
+          allowfullscreen>
+          Loading…
+        </iframe>
+      </div>
+    </div>
 
     <div class="footer">
       <p>Word WorX – Building Your Faith, Daily</p>
