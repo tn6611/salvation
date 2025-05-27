@@ -13,7 +13,7 @@
       padding: 0;
     }
     .container {
-      max-width: 600px;
+      max-width: 700px;
       margin: auto;
       padding: 2rem;
       text-align: center;
@@ -43,19 +43,9 @@
       color: #777;
       margin-top: 2rem;
     }
-    .audio-player {
-      margin: 1.5rem 0;
-    }
     iframe {
-      width: 100%;
-      height: 600px;
+      max-width: 100%;
       border: none;
-    }
-
-    @media (max-width: 768px) {
-      iframe {
-        height: 800px;
-      }
     }
   </style>
 </head>
@@ -69,23 +59,21 @@
       <p>Lord Jesus, I believe You are the Son of God. I believe You died for me and rose again. I confess You as my Lord and Saviour. Come into my heart and make me new. Thank You for saving me. I am now born again. Amen.</p>
     </div>
 
-    <!-- Embedded Audio Player -->
-    <div class="audio-player">
-      <p><strong>🎧 Listen to the Prayer:</strong></p>
-      <audio controls>
-        <source src="https://tn6611.github.io/salvation/Salvation_Prayer.opus" type="audio/ogg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
-
-    <!-- Action Buttons -->
     <a href="https://tn6611.github.io/salvation/Salvation_Prayer.opus" class="btn" target="_blank">🎧 Follow Audio Prayer</a>
     <a href="https://tn6611.github.io/salvation/Now_that_you_are_born_again_English.pdf" class="btn" target="_blank">📘 Welcome Gift</a>
-    <a href="https://wa.me/yourphonenumber" class="btn" target="_blank">💬 Contact Us on WhatsApp</a>
-    <a href="https://your-wordworx-platform-link" class="btn" target="_blank">📖 Back to Word WorX</a>
 
-    <!-- Google Form Embed -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7Ae8Int5y92SrqtrcTrTZWYmeRb22XhQti0irzBOIp0-O8Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <h2>✍️ Fill in Your Details</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7Ae8Int5y92SrqtrcTrTZWYmeRb22XhQti0irzBOIp0-O8Q/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+    <!-- Button to show WhatsApp link -->
+    <button onclick="document.getElementById('whatsappLink').style.display='block'" class="btn">
+      ✅ I have completed the form
+    </button>
+
+    <!-- WhatsApp group link, hidden initially -->
+    <div id="whatsappLink" style="display:none; margin-top: 20px;">
+      <a href="https://chat.whatsapp.com/Gi4aAiHq2sa2dOgCUXhbi1" class="btn" target="_blank">💬 Join WhatsApp Group</a>
+    </div>
 
     <div class="footer">
       <p>Word WorX – Building Your Faith, Daily</p>
